@@ -1,15 +1,16 @@
 from http import client
-from flask import Flask, render_template
+from flask import Flask
 import os
 import pymongo
-from routes import commonRoutes, predictRoute
+from app.dashboard import dashboard
+from api import predict
 from utils import modelExists
 
 app = Flask(__name__, instance_relative_config=True)
 
 # Register Routes
-app.register_blueprint(commonRoutes.commonRoutes)
-app.register_blueprint(predictRoute.predictRoutes,url_prefix='/predict')
+app.register_blueprint(dashboard.dashboard)
+app.register_blueprint(predict.predict,url_prefix='/predict')
 
 # Train
 if(modelExists.checkModelExists() == False):
