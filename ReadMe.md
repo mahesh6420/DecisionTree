@@ -1,5 +1,7 @@
 # Decision Tree
 
+![tree](https://github.com/kolithawarnakulasooriya/DecisionTree/blob/main/static/tree.png)
+
 # Github Actions
 
 ISC 629: Computing Ecosystems
