@@ -9,23 +9,23 @@
 </div>
 
 <div class="d-flex justify-content-center mt-3 form-wrapper">
-    <form>
+    <form method="post">
         <div class="row">
             <div class="col">
                 <label class="pd-form-label" for="sepal_length">Sepal Length (cm)</label>
-                <input id="sepal_length" type="text" class="form-control" placeholder="" onkeypress="return isNumber(event)" onpaste="return false;">
+                <input id="sepal_length" name="sepal_length" type="text" class="form-control" placeholder="" onkeypress="return isNumber(event)" onpaste="return false;">
             </div>
             <div class="col">
                 <label class="pd-form-label" for="sepal_width">Sepal Width (cm)</label>
-                <input id="sepal_width" type="text" class="form-control" placeholder="" onkeypress="return isNumber(event)" onpaste="return false;">
+                <input id="sepal_width" name="sepal_width" type="text" class="form-control" placeholder="" onkeypress="return isNumber(event)" onpaste="return false;">
             </div>
             <div class="col">
                 <label class="pd-form-label" for="petal_length">Petal Length (cm)</label>
-                <input id="petal_length" type="text" class="form-control" placeholder="" onkeypress="return isNumber(event)" onpaste="return false;">
+                <input id="petal_length" name="petal_length" type="text" class="form-control" placeholder="" onkeypress="return isNumber(event)" onpaste="return false;">
             </div>
             <div class="col">
                 <label class="pd-form-label" for="petal_width">Petal Width (cm)</label>
-                <input id="petal_width" type="text" class="form-control" placeholder="" onkeypress="return isNumber(event)" onpaste="return false;">
+                <input id="petal_width" name="petal_width" type="text" class="form-control" placeholder="" onkeypress="return isNumber(event)" onpaste="return false;">
             </div>
             <div class="col pd-submit-wrapper">
                 <button type="submit" class="btn btn-primary pd-submit">Predict</button>
