@@ -17,20 +17,3 @@ def save(clf, feature_cols):
         os.remove(OUTPUT_PNG_PATH)
     graph.write_png(OUTPUT_PNG_PATH)
     Image(graph.create_png())
-    return uploadToS3()
-
-def uploadToS3():
-    session = boto3.Session(
-        aws_access_key_id=AWS_ACCESS_KEY,
-        aws_secret_access_key=AWS_SECRET_KEY,
-    )
-    s3 = session.resource('s3')
-    key = str(time.time_ns()) + '.png'
-    response = s3.meta.client.upload_file(
-        Filename=OUTPUT_PNG_PATH, 
-        Bucket=S3_BUCKET_NAME, 
-        Key=key,
-        ExtraArgs={'ACL': 'public-read'}
-    )
-    return 'https://'+S3_BUCKET_NAME+'.s3.us-east-2.amazonaws.com/'+key
-    

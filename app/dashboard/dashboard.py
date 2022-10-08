@@ -19,8 +19,7 @@ def index():
             'petal_length': data.get('Features').get('pl'),
             'petal_width': data.get('Features').get('pw'),
             'ClassIndex': ", ".join(map(str, data.get('ClassIndex'))),
-            'Classes': ", ".join(map(str, data.get('Classes'))),
-            'image': data.get('ImageUrl')
+            'Classes': ", ".join(map(str, data.get('Classes')))
         })
         count += 1
     return render_template('dashboard/index.html', rows = returnArray)
