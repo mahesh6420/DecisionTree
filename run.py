@@ -2,7 +2,8 @@ from http import client
 from flask import Flask, render_template
 import os
 import pymongo
-from routes import commonRoutes, predictRoute
+from routes import commonRoutes
+from routes.api import predictRoute
 from utils import modelExists
 
 app = Flask(__name__, instance_relative_config=True)
