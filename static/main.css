@@ -1,0 +1,37 @@
+h1 {
+    font-size: 3.5rem;
+    color: #09a509;
+}
+
+h3 {
+    font-size: 14px;
+    color: #05c505;
+}
+
+.pd-form-label {
+    color: #0e890e;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+.pd-submit-wrapper {
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+}
+
+.btn-primary  {
+    background-color: #0e890e;
+}
+
+.pd-submit {
+    width: 124px;
+}
+
+.form-wrapper {
+    border: solid;
+    border-width: 1px;
+    border-color: #0e890e;
+    border-radius: 10px;
+    padding: 11px;
+}
