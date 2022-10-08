@@ -29,12 +29,20 @@
             </div>
             <div class="col pd-submit-wrapper">
                 <button type="submit" class="btn btn-primary pd-submit">Predict</button>
-                <button type="button" class="btn btn-primary pd-submit" data-toggle="modal" data-target="viewImage">
+                <button type="button" class="btn btn-primary pd-submit" data-toggle="modal" data-target="#viewImageModal">
                     View
                 </button>
             </div>
         </div>
     </form>
+</div>
+
+<div class="modal fade" id="viewImageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <img src="{{ url_for('static', filename='tree.png')}}"/> 
+    </div>
+</div>
 </div>
 
 <div class="d-flex justify-content-center mt-2 form-wrapper">
@@ -62,15 +70,6 @@
                 <td>{{row.get('Classes')}}</td>
             </tr>
           {%endfor%}
-
-            <div class="modal fade" id="viewImage" tabindex="-1" role="dialog" aria-labelledby="viewImageLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <img src="{{ url_for('static', filename='tree.png')}}"/>
-                </div>
-                </div>
-            </div>
-          
         </tbody>
       </table>
 </div>

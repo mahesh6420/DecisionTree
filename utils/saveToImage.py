@@ -5,7 +5,7 @@ import pydotplus
 import boto3
 import time
 import os
-from config import OUTPUT_PNG_PATH, AWS_ACCESS_KEY, AWS_SECRET_KEY, S3_BUCKET_NAME
+from config import OUTPUT_PNG_PATH
 
 def save(clf, feature_cols):
     dot_data = StringIO()
