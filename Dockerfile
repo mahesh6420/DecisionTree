@@ -11,7 +11,7 @@ COPY . .
 
 EXPOSE 3000
 
-ENV MONGO_URL=mongodb+srv://admin:gBeCjN6Gm9thjsP9@cluster0.ecsej3g.mongodb.net/?retryWrites=true&w=majority
+ENV MONGO_URL=
 
 ENTRYPOINT [ "python" ]
 CMD ["run.py"]
