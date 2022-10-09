@@ -15,13 +15,10 @@ Conducted by Harith Warnakulasooriya
 
 Before all setup your 
 
-1. S3 bucket (Publicly accessible, AWS)
-2. Mongo cluster (Atlas)
-3. Setup your environment
+1. Mongo cluster (Atlas)
+2. Setup your environment
 
 ```
-AWS_ACCESS_KEY=<>
-AWS_SECRET_KEY=<>
 MONGO_URL=<>
 ```
 ## Instructions
