@@ -1,6 +1,6 @@
 # Decision Tree
 
-![tree](https://github.com/kolithawarnakulasooriya/DecisionTree/blob/main/static/tree.png)
+![tree](https://github.com/kolithawarnakulasooriya/DecisionTree/blob/main/img.png)
 
 # Github Actions
 
