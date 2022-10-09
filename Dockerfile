@@ -10,7 +10,6 @@ RUN pip install -r requirements.txt
 COPY . .
 
 ENV PORT=80
-ENV MONGO_URL=
 
 EXPOSE 8080
 
