@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY requirements.txt requirements.txt
 
+RUN apt-get update
+RUN sudo apt-get install -y graphviz
 RUN pip install numpy
 RUN pip install -r requirements.txt
 
