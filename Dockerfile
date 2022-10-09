@@ -9,9 +9,10 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-EXPOSE 3000
-
+ENV PORT=80
 ENV MONGO_URL=
+
+EXPOSE 8080
 
 ENTRYPOINT [ "python" ]
 CMD ["run.py"]
