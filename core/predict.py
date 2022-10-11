@@ -4,7 +4,7 @@ from sklearn import datasets
 from utils import datasets
 from db.dashboard import DashboardDb
 
-class PredictIRIS() :
+class PredictIRIS:
     def __init__(self) :
         self.clf = pickle.load(open(MODEL_PATH, "rb"))
 
